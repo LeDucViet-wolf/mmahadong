@@ -27,14 +27,6 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
-
-    <!-- =======================================================
-    * Template Name: BizPage
-    * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-    * Updated: Aug 07 2024 with Bootstrap v5.3.3
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -55,6 +47,18 @@
                 <li><a href="#team">Huấn luyện viên</a></li>
                 <li><a href="#pricing">Khóa học</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
+                <li class="dropdown">
+                    <a href="#">
+                        <span id="selected-language"></span>
+                        <i class="bi bi-chevron-down toggle-dropdown"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-lang="en">Tiếng Anh</a></li>
+                        <li><a href="#" data-lang="vi">Tiếng Việt</a></li>
+                        <li><a href="#" data-lang="it">Tiếng Ý</a></li>
+                        <li><a href="#" data-lang="zh">Tiếng Trung</a></li>
+                    </ul>
+                </li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -624,6 +628,7 @@
 
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
+<script src="assets/js/language.js"></script>
 
 </body>
 

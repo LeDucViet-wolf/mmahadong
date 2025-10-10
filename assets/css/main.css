@@ -922,8 +922,8 @@ section,
     .hero .text-banner {
         position: unset;
         object-fit: unset;
-        width: 600px;
-        height: 200px;
+        width: 1000px;
+        height: 400px;
     }
 
     .hero .carousel-control-prev,
