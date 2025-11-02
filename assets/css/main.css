@@ -30,7 +30,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
     --nav-color: #ffffff; /* The default color of the main navmenu links */
-    --nav-hover-color: #18d26e; /* Applied to main navmenu links when they are hovered over or active */
+    --nav-hover-color: rgb(220 38 38 / var(--tw-bg-opacity, 1)); /* Applied to main navmenu links when they are hovered over or active */
     --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
     --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
     --nav-dropdown-color: #666666; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -1797,7 +1797,7 @@ section,
 
 .contact .php-email-form button[type=submit] {
     color: var(--contrast-color);
-    background: var(--accent-color);
+    background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
     border: 0;
     padding: 10px 30px;
     transition: 0.4s;
@@ -1805,7 +1805,7 @@ section,
 }
 
 .contact .php-email-form button[type=submit]:hover {
-    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+    background: rgb(185 28 28 / var(--tw-bg-opacity, 1));
 }
 
 /*--------------------------------------------------------------
