@@ -39,7 +39,7 @@
     });
 
     function email_form_submit(thisForm, formData) {
-        const scriptURL = "https://script.google.com/macros/s/AKfycbycYSFNbCB0otp8teV5S7zPGoYKFTavLCqCwxcvsIpMhTNpwrZPsFYnBMDFFBxCivbOGA/exec";
+        const scriptURL = "https://script.google.com/macros/s/AKfycbzl2-EyAOIcAXut3XCEmSFEMw5H_7JdeYcBxZSQSGBoq1GT12rXY9mrlEKHAflY2Jwg/exec";
         const data = {
             name: formData.get('name').trim(),
             email: formData.get('email').trim(),
@@ -49,8 +49,9 @@
 
         fetch(scriptURL, {
             method: 'POST',
+            mode: "no-cors",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data)
+            body: formData
         })
             .then(response => {
                 if (response.ok) {
